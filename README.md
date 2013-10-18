@@ -10,7 +10,7 @@ To run the specs, just run
 $ rspec questions_specs.rb
 ~~~
 
-Also, don't spend the whole weekend on this. Try and do the bulk of them today, revisit it a bit this weekend if you want. Spend the weekend consolodating the stuff we've covered on Rails and JS, and carrying on with your quiz and Yelp apps :-)
+Also, don't spend the whole weekend on this. Try and do the bulk of them today, revisit it a bit this weekend if you want. Spend the weekend consolodating the stuff we've covered on Rails and JS, and carrying on with your quiz and Yelp apps :smile:
 
 Good luck
 
@@ -27,4 +27,4 @@ Good luck
 * Try and break down the problems into smaller chunks. For e.g. if you google "How to select elements in an array that start with a", you won't have much luck. Try and find out a) how to select certain elements in an array, b) how to test if a string starts with an 'a'
 * Don't forget Enumerable (advanced array methods)
 * Read the specs and the comments - if you're still confused, just ask.
-* Don't panic ;-)
+* Don't panic :wink:
