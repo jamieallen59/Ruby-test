@@ -4,6 +4,12 @@ Here we're going to revisit the basics of Ruby. There are 41 questions - you don
 
 You should be able to answer most questions with a couple of lines of code, and just a few methods. If you're writing a long, complex solution, there's probably a better way.
 
+To run the specs, just run
+
+~~~
+$ rspec questions_specs.rb
+~~~
+
 Also, don't spend the whole weekend on this. Try and do the bulk of them today, revisit it a bit this weekend if you want. Spend the weekend consolodating the stuff we've covered on Rails and JS, and carrying on with your quiz and Yelp apps :-)
 
 Good luck
