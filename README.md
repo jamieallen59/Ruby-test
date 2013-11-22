@@ -10,7 +10,7 @@ To run the specs, just run
 $ rspec questions_spec.rb
 ~~~
 
-Also, don't spend the whole weekend on this. Try and do the bulk of them today, revisit it a bit this weekend if you want. Spend the weekend consolodating the stuff we've covered on Rails and JS, and carrying on with your quiz and Yelp apps :smile:
+Also, don't spend the whole weekend on this. Try and do the bulk of them today, revisit it a bit this weekend if you want. Spend the weekend consolodating the stuff we've covered on Rails and JS, and carrying on with your blog apps :smile:
 
 Good luck
 
