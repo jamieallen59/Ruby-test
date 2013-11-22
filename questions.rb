@@ -69,7 +69,7 @@ end
 def shortest_word_in_array(array)
 end
 
-# return the shortest word in an array
+# return the longest word in an array
 def longest_word_in_array(array)
 end
 
@@ -88,7 +88,7 @@ def turn_symbol_into_string(symbol)
 end
 
 # get the average from an array, rounded to the nearest integer
-# so [10, 15, 25] should return 33
+# so [10, 15, 25] should return 17
 def average_of_array(array)
 end
 
