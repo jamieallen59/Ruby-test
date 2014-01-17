@@ -102,7 +102,7 @@ describe 'the Friday test :)' do
   end
 
   specify 'turn_symbol_into_string' do
-    n = turn_symbol_into_string 'foobar'
+    n = turn_symbol_into_string :foobar
     expect(n).to eq 'foobar'
   end
 
