@@ -1,3 +1,12 @@
+Ruby Challenge
+==============
+
+![](try-ruby.png)
+
+This was a challenge set to us on week 8 of Makers Academy to brush up our Ruby skills. Here's what we received:
+
+--------------------------
+
 ## Friday test!
 
 Here we're going to revisit the basics of Ruby. There are 41 questions - you don't have to do every single one (although if you can, that's great). You should be able to do at least 50% of them. They vary in level from quite easy to fairly hard. Work through them and check if they're correct by running the specs.
@@ -34,3 +43,22 @@ Good luck
 * Don't forget Enumerable (advanced array methods)
 * Read the specs and the comments - if you're still confused, just ask.
 * Don't panic :wink:
+
+-------------------------------
+
+Have a go yourself! Open the command line:
+
+### Run the tests
+```sh
+git clone git@github.com:jamieallen59/Ruby-test.git
+cd Ruby-test
+rspec
+```
+
+To have a go yourself, open 'questions_spec.rb' in your text editor. At the top, change "require 'answers'", to "require 'questions'"
+
+```sh
+rspec
+```
+You should see 39 test failures. Now, open 'questions.rb' and try to solve them.
+

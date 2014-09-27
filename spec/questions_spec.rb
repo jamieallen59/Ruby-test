@@ -1,5 +1,5 @@
 require 'rspec'
-require 'questions'
+require 'answers'
 
 RSpec.configure do |config|
   config.color = true
