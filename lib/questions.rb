@@ -203,7 +203,8 @@ end
 # where 'special character' means anything apart from the letters
 # a-z (uppercase and lower) or numbers
 def check_a_string_for_special_characters(string)
-	# !string.include?(/[A-Z])
+	return false if /[^\w]/.match(string) == nil
+	true
 end
 
 # get the upper limit of a range. e.g. for the range 1..20, you
@@ -215,15 +216,17 @@ end
 # should return true for a 3 dot range like 1...20, false for a 
 # normal 2 dot range
 def is_a_3_dot_range?(range)
-	!range.to_a.include?(range.last)
+	!range.include?(range.last)
 end
 
 # get the square root of a number
 def square_root_of(number)
+	number**(1.0/2)
 end
 
 # count the number of words in a file
 def word_count_a_file(file_path)
+	File.read(file_path).split.count
 end
 
 # --- tougher ones ---
@@ -232,18 +235,33 @@ end
 # called call_method_from_string('foobar')
 # the method foobar should be invoked
 def call_method_from_string(str_method)
+	str_method.call
 end
 
 # return true if the date is a uk bank holiday for 2014
 # the list of bank holidays is here:
 # https://www.gov.uk/bank-holidays
 def is_a_2014_bank_holiday?(date)
+	holidays = [	Time.new(2014, 12, 26),
+								Time.new(2014, 12, 25),
+								Time.new(2014, 8, 25), 
+								Time.new(2014, 5, 26),
+								Time.new(2014, 5, 5),
+								Time.new(2014, 4, 21),
+								Time.new(2014, 4, 18),
+								Time.new(2014, 1, 1)
+							]
+	holidays.include?(date)
 end
 
 # given your birthday this year, this method tells you
 # the next year when your birthday will fall on a friday
 # e.g. january 1st, will next be a friday in 2016
 def your_birthday_is_on_a_friday_in_the_year(birthday)
+	until birthday.friday?
+		birthday = Time.new birthday.year + 1, birthday.month, birthday.day
+	end
+	birthday.year
 end
 
 # in a file, total the number of times words of different lengths
@@ -252,12 +270,29 @@ end
 # and 1 that is 4 letters long. Return it as a hash in the format
 # word_length => count, e.g. {2 => 1, 3 => 5, 4 => 1}
 def count_words_of_each_length_in_a_file(file_path)
+	words = File.read(file_path).split(/\W+/)
+	counter = Hash.new(0)
+
+	words.each { |word| counter[word.length] += 1 }
+
+	counter
 end
 
 # implement fizzbuzz without modulo, i.e. the % method
 # go from 1 to 100
 # (there's no RSpec test for this one)
 def fizzbuzz_without_modulo
+	(1..100).each do |number|
+		if number.remainder(15) == 0
+			puts "fizzbuzz"
+		elsif number.remainder(5) == 0
+			puts "buzz"
+		elsif number.remainder(3) == 0
+			puts "fizz"
+		else
+			puts number
+		end
+	end
 end
 
 # print the lyrics of the song 99 bottles of beer on the wall
@@ -267,4 +302,13 @@ end
 # at the end.
 # (there's no RSpec test for this one)
 def ninety_nine_bottles_of_beer
+	word = "bottles"
+	(1..99).reverse_each do |number|
+		puts "#{number} #{word} of beer on the wall, #{number} #{word} of beer."
+		number -= 1
+		number == 1 ? word = "bottle" : word = "bottles"
+		number = "no more" if number == 0
+		puts "Take one down and pass it around, #{number} #{word} of beer on the wall."
+	end
+	puts "No more bottles of beer on the wall, no more bottles of beer.\nGo to the store and buy some more, 99 bottles of beer on the wall."
 end
