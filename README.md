@@ -5,8 +5,6 @@ Ruby Challenge
 
 This was a challenge set to us on week 8 of Makers Academy to brush up our Ruby skills. Here's what we received:
 
---------------------------
-
 ## Friday test!
 
 Here we're going to revisit the basics of Ruby. There are 41 questions - you don't have to do every single one (although if you can, that's great). You should be able to do at least 50% of them. They vary in level from quite easy to fairly hard. Work through them and check if they're correct by running the specs.
@@ -25,13 +23,13 @@ $ rspec questions_spec.rb
 $ rspec questions_spec.rb --tag focus
 ~~~
 
-Also, don't spend the whole weekend on this. Try and do the bulk of them today, revisit it a bit this weekend if you want. Spend the weekend consolodating the stuff we've covered on Rails and JS, and carrying on with your yelp apps :smile:
+:smile:
 
 Good luck
 
 ### Rules
 
-* Try and get the RSpec tests to pass (but not by cheating - i.e. hardcoding the expected value)
+* Try and get the RSpec tests to pass (obviously without hardcoding the expected value)
 * You shouldn't need any extra libraries or gems
 * The cleaner your code the better!
 * Googling is fine as usual
@@ -46,7 +44,7 @@ Good luck
 
 -------------------------------
 
-Have a go yourself! Open the command line:
+If you'd like to have a go, open the command line and check that it is all working:
 
 ### Run the tests
 ```sh
@@ -61,4 +59,6 @@ To have a go yourself, open 'questions_spec.rb' in your text editor. At the top,
 rspec
 ```
 You should see 39 test failures. Now, open 'questions.rb' and try to solve them.
+
+Good luck!
 
