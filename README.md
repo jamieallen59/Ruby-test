@@ -1,7 +1,7 @@
 Ruby Challenge
 ==============
 
-![](try-ruby.png)
+![](images/try-ruby.png)
 
 This was a challenge set to us on week 8 of Makers Academy to brush up our Ruby skills. Here's what we received:
 
